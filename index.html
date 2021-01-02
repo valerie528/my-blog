@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<!--It's a best practice to always declare DOCTYPE!-->
+<html lang="en">
+  <head>
+    <title>My Blog</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+    <div id="menu1">
+      <figure>
+        <a href="#menu1">
+          <img src="file:///c:/Users/Acer/Documents/w3c/logo/logo8.jpg" alt="Our Logo" width="100px">
+        </a>
+      </figure>
+      
+      <ul>
+        <li class="currentPage"><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#home">BLOG</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <div id="home">
+      <h2>Philippine Destinations</h2>
+      <hr>
+      <nav>
+        <ul>
+          <li><a href="#antique">Antique</a></li>
+          <li><a href="#bantayan">Bantayan</a></li>
+          <li><a href="#bohol">Bohol</a></li>
+          <li><a href="#concepcion">Concepcion</a></li>
+          <li><a href="#dumaguete">Dumaguete</a></li>
+          <li><a href="#siquijor">Siquijor</a></li>
+        </ul>
+      </nav>
+      <video id="video" controls autoplay> 
+        <source src=file:///c:/Users/Acer/Documents/w3c/Travel/Bohol/Bohol_4K.mp4 type=video/mp4> 
+      </video> 
+    </div>
+
+    <details id="about">
+      <summary>About</summary>
+      <p>We are JV & Co., we love nature, and we love to see and feel what nature has to offer.</p>
+    </details>
+
+    <article>
+
+      <div id="antique">
+        <h2>Antique</h2>
+        <hr>
+
+        <img src="file:///c:/Users/Acer/Documents/w3c/Travel/Antique/DSC_0115.jpg" alt="Sunrise in Mararison Island">        
+        <p><i>Beautiful sunrise in Mararison Island</i></p>
+
+        <br><img src="file:///c:/Users/Acer/Documents/w3c/Travel/Antique/sunset.jpg" alt="Sunset in Lantawan Hills">        
+        <p><i>Beautiful sunset in Mararison Hills</i></p>
+      </div>
+
+      <div id="bantayan">
+        <h2>Bantayan</h2>
+        <hr>
+       
+        <img src="file:///c:/Users/Acer/Documents/w3c/Travel/Bantayan/DSC_2593.jpg" alt="Sunset in The Ruins in Bantayan Island">        
+        <p><i>Beautiful sunset in The Ruins</i></p><br>
+
+        <br><img src="file:///c:/Users/Acer/Documents/w3c/Travel/Bantayan/DSC_2562.jpg" alt="Camp Sawi in Bantayan Island">        
+        <p><i>Camp Sawi</i></p>
+      </div>
+
+      <div id="bohol">
+        <h2>Bohol</h2>
+        <hr>
+        
+        <img src="file:///c:/Users/Acer/Documents/w3c/Travel/Bohol/DSC_2874.jpg" alt="Sipatan Twin Hanging Bridge">        
+        <p><i>Sipatan Twin Hanging Bridge</i></p><br>
+
+        <br><img src="file:///c:/Users/Acer/Documents/w3c/Travel/Bohol/DSC_2815.jpg" alt="Chocolate Hills in Bohol">        
+        <p><i>Chocolate Hills</i></p>
+      </div>
+
+      <div id="concepcion">
+        <h2>Concepcion</h2>
+        <hr>
+       
+        <img src="file:///c:/Users/Acer/Documents/w3c/Travel/Concepcion/DSC_1715.jpg" alt="Sandbar in Agho Island">        
+        <p><i>Sandbar in Agho Island</i></p><br>
+
+        <br><img src="file:///c:/Users/Acer/Documents/w3c/Travel/Concepcion/DSC_1779.jpg" alt="Beautiful view in Bulubadiangan Island">        
+        <p><i>Beautiful view in Bulubadiangan Island</i></p>
+      </div>
+
+      <div id="dumaguete">
+        <h2>Dumaguete</h2>
+        <hr>
+        
+        <img src="file:///c:/Users/Acer/Documents/w3c/Travel/Dumaguete/DSC_0265.jpg" alt="Dragonboat Competition 2018 in Rizal Boulevard">        
+        <p><i>Dragonboat Competition 2018 in Rizal Boulevard</i></p><br>
+
+        <br><img src="file:///c:/Users/Acer/Documents/w3c/Travel/Dumaguete/DSC_0308.jpg" alt="Sulfur Vents in Valencia, Negros Oriental">        
+        <p><i>Sulfur Vents in Valencia, Negros Oriental</i></p>
+        </div>
+
+        <div id="siquijor">
+        <h2>Siquijor</h2>
+        <hr>
+        
+        <img src="file:///c:/Users/Acer/Documents/w3c/Travel/Siquijor/DSC_3411.jpg" alt="Cambugahay Falls in Siquijor">        
+        <p><i>Cambugahay Falls</i></p><br>
+
+        <br><img src="file:///c:/Users/Acer/Documents/w3c/Travel/Siquijor/DSC_3486.jpg" alt="Beautiful view from the pool">        
+        <p><i>Beautiful view from the pool</i></p>
+        </div>
+      
+        
+<!--            Using nav within summary element-->
+
+          <form id="contact">
+            <fieldset>
+              <legend><i>Send us a message</i></legend>
+              
+              <label for="mail">
+                <span>E-mail: </span>
+                <input type="email" id="mail" name="usermail" required />
+                <strong><abbr title="required">*</abbr></strong>
+              </label>
+              
+              <br>
+              
+              <label for="messsage">Your message:</label><br> 
+              <textarea id="message" name="messagetext"></textarea>
+            </fieldset>
+            
+            <input type="submit" id="submitForm" value="Send" onclick="sendForm(event)">
+            <!--
+            <button type="submit">Submit</button>
+            <button type="button">Cancel</button>
+-->
+            </form>
+         
+        
+                
+    <!--        This is an example of aside. The mark element has also been showcased in the paragraph. -->
+ 
+    </article>
+  </main>
+    <footer>
+      <ul id="menu3">
+        <li class="currentPage"><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#destinations">BLOG</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <p>©2020</p>
+  </footer>
+  </body>
+</html>
